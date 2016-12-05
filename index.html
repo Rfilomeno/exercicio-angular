@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app='tarefas'>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <title>tp-2</title>
+</head>
+
+<body ng-controller='TarefasController'>
+    <div class="container jumbotron text-center center-block">
+        <h2>TP-2</h2>
+    </div>
+    <lista></lista>
+    <div class="container">
+        <form>
+            <div class="form-group form-group-sm">
+                <label for="tarefa">Tarefa</label>
+
+                <input type="text" class="form-control" id="tarefa" placeholder="tarefa" ng-model="tarefaCtrl.tarefaText">
+            </div>
+
+
+            <button ng-click="tarefaCtrl.addTarefa()" class="btn btn-primary btn-xs">Adicionar</button>
+            <button ng-click="tarefaCtrl.archive()" class="btn btn-danger btn-xs">Excluir selecionado</button>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/module.js"></script>
+    <script src="js/controllers/tarefas-controller.js"></script>
+    <script src="js/directives/minhas-diretivas.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item disabled">
+            <h3>{{titulo.titulo}}</h3>
+        </li>
+        <li ng-repeat="tarefa in tarefas" class="list-group-item"><input type="checkbox" ng-model="tarefa.concluido"> {{tarefa.item}}</li>
+    </ul>
+</div>
